@@ -45,6 +45,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.1.1.603\lib\net45\StackExchange.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -88,6 +92,7 @@
     <Compile Include="Models\ThrottleCounter.cs" />
     <Compile Include="Logging\ThrottleLogEntry.cs" />
     <Compile Include="Attributes\EnableThrottlingAttribute.cs" />
+    <Compile Include="Repositories\RedisCacheRepository.cs" />
     <Compile Include="ThrottlingMiddleware.cs" />
     <Compile Include="ThrottleManager.cs" />
     <Compile Include="ThrottlePolicy.cs" />
